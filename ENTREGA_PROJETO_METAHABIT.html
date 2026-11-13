@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Entrega do Projeto — Meta (MetaHabit)</title>
+  <style>
+    @page {
+      margin: 20mm;
+      size: A4;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      line-height: 1.5;
+      font-size: 13px;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      border-bottom: 2px solid #6366f1;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 22px;
+      color: #0f172a;
+      margin: 0 0 4px 0;
+    }
+    .subtitle {
+      font-size: 13px;
+      color: #64748b;
+      margin: 0;
+    }
+    .meta-info {
+      display: flex;
+      justify-content: space-between;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin-bottom: 20px;
+      font-size: 12px;
+    }
+    .meta-info div strong {
+      color: #334155;
+    }
+    .links-box {
+      background: #eef2ff;
+      border: 1px solid #c7d2fe;
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 20px;
+    }
+    .links-box h2 {
+      font-size: 14px;
+      color: #3730a3;
+      margin: 0 0 10px 0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .links-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .links-list li {
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
+    .links-list li:last-child {
+      margin-bottom: 0;
+    }
+    .links-list a {
+      color: #4f46e5;
+      font-weight: 600;
+      text-decoration: underline;
+      word-break: break-all;
+    }
+    h2.section-title {
+      font-size: 15px;
+      color: #0f172a;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 4px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    p {
+      margin: 0 0 10px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 12px;
+    }
+    th, td {
+      border: 1px solid #e2e8f0;
+      padding: 7px 10px;
+      text-align: left;
+    }
+    th {
+      background: #f1f5f9;
+      color: #334155;
+      font-weight: 600;
+    }
+    .badge {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+    .badge-success {
+      background: #dcfce7;
+      color: #166534;
+    }
+    .footer {
+      margin-top: 30px;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 10px;
+      font-size: 11px;
+      color: #94a3b8;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Entrega de Atividade Prática — Meta (MetaHabit)</h1>
+    <p class="subtitle">Processo de Desenvolvimento de Software com Apoio de IA Responsável (Google Antigravity)</p>
+  </div>
+
+  <div class="meta-info">
+    <div><strong>Aluno / Autor:</strong> Pedro (GitHub: P3DR0K13)</div>
+    <div><strong>Projeto:</strong> Meta (MetaHabit)</div>
+    <div><strong>Data de Entrega:</strong> 13 de Novembro de 2026</div>
+  </div>
+
+  <div class="links-box">
+    <h2>🔗 Links Principais de Avaliação</h2>
+    <ul class="links-list">
+      <li>
+        <strong>1. Repositório no GitHub:</strong><br>
+        <a href="https://github.com/P3DR0K13/MetaHabit">https://github.com/P3DR0K13/MetaHabit</a>
+        <span style="color:#64748b; font-size:11px;">(Histórico completo de commits com evolução do código)</span>
+      </li>
+      <li>
+        <strong>2. Sistema Publicado (No Ar):</strong><br>
+        <a href="https://metahabit.vercel.app">https://metahabit.vercel.app</a>
+        <span style="color:#64748b; font-size:11px;">(Acesso público pronto para uso, sem necessidade de instalação local)</span>
+      </li>
+      <li>
+        <strong>3. Especificação Final (spec.md):</strong><br>
+        <a href="https://github.com/P3DR0K13/MetaHabit/blob/main/spec.md">https://github.com/P3DR0K13/MetaHabit/blob/main/spec.md</a>
+      </li>
+      <li>
+        <strong>4. Changelog & Registro de Decisões:</strong><br>
+        <a href="https://github.com/P3DR0K13/MetaHabit/blob/main/CHANGELOG.md">https://github.com/P3DR0K13/MetaHabit/blob/main/CHANGELOG.md</a>
+      </li>
+    </ul>
+  </div>
+
+  <h2 class="section-title">1. Resumo do Sistema Desenvolvido</h2>
+  <p>
+    O <strong>MetaHabit</strong> é uma aplicação web completa desenvolvida em <strong>Next.js 15+ (App Router), TypeScript, Tailwind CSS e Prisma ORM</strong>. Seu objetivo é unir hábitos recorrentes diários e projetos orientados a objetivos em uma única interface, respondendo à pergunta essencial do usuário: <em>"O que faço agora?"</em>.
+  </p>
+  <p>
+    O sistema conta com um motor atômico de gamificação (XP, progressão por Níveis, escala de Ranks de Bronze a Lendário, saldo de moedas e loja pessoal de recompensas com auditoria contra duplicidades) e planejamento assistido por IA (Google Gemini) sob o modelo <strong>Human-in-the-Loop</strong>.
+  </p>
+
+  <h2 class="section-title">2. Conformidade com os Requisitos Técnicos</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Requisito Exigido</th>
+        <th>Situação</th>
+        <th>Evidência Técnica no Projeto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Histórico Real de Commits</strong></td>
+        <td><span class="badge badge-success">Atendido</span></td>
+        <td>Repositório no GitHub demonstra commits progressivos de arquitetura, correções e documentação.</td>
+      </tr>
+      <tr>
+        <td><strong>Cadastro e Consulta no Banco</strong></td>
+        <td><span class="badge badge-success">Atendido</span></td>
+        <td>Modelos relacionais completos (Users, Habits, HabitLogs, Projects, Tasks, ActivityRewards, Rewards).</td>
+      </tr>
+      <tr>
+        <td><strong>Autenticação & Controle de Acesso</strong></td>
+        <td><span class="badge badge-success">Atendido</span></td>
+        <td>Login funcional com hash bcrypt (12 salt rounds), sessão segura JWT (jose) e autorização no servidor (where: userId).</td>
+      </tr>
+      <tr>
+        <td><strong>Segurança & Proteção de Credenciais</strong></td>
+        <td><span class="badge badge-success">Atendido</span></td>
+        <td>Nenhuma chave ou senha exposta; todas as credenciais isoladas em variáveis de ambiente (.env protegido por .gitignore).</td>
+      </tr>
+      <tr>
+        <td><strong>Revisão Humana das Propostas da IA</strong></td>
+        <td><span class="badge badge-success">Atendido</span></td>
+        <td>O agente de IA propõe planos de tarefas e adaptações, mas nada é salvo no banco sem a revisão, edição e confirmação explícita do usuário (RF10, RF20).</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="section-title">3. Instruções Rápidas para o Avaliador</h2>
+  <ol style="padding-left: 20px; margin: 0 0 10px 0; font-size: 12px;">
+    <li>Acesse a aplicação diretamente pela URL publicada (recomendado em aba anônima).</li>
+    <li>Clique em <strong>"Criar Conta"</strong> para registrar um novo usuário com nome, e-mail e senha.</li>
+    <li>No cockpit <strong>"O que faço agora?"</strong>, experimente concluir um hábito diário e observe o ganho imediato de XP e moedas no cabeçalho.</li>
+    <li>Em <strong>"Projetos"</strong>, crie um objetivo e clique em <strong>"Gerar Plano com IA"</strong> para experimentar o fluxo de perguntas de esclarecimento e aprovação de tarefas.</li>
+    <li>Na <strong>"Loja Pessoal"</strong>, cadastre uma recompensa e efetue o resgate utilizando suas moedas conquistadas.</li>
+  </ol>
+
+  <div class="footer">
+    Meta (MetaHabit) — Desenvolvido com apoio do Google Antigravity e princípios de IA Responsável.
+  </div>
+
+</body>
+</html>

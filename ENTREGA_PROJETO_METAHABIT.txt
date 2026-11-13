@@ -1,0 +1,76 @@
+================================================================================
+RELATÓRIO DE ENTREGA DE PROJETO PRÁTICO — META (METAHABIT)
+Processo de Desenvolvimento de Software com Apoio de IA Responsável (Google Antigravity)
+================================================================================
+
+Aluno / Autor: Pedro (P3DR0K13)
+Data: 13 de Novembro de 2026
+Status do Projeto: Implementado, testado e publicado.
+
+--------------------------------------------------------------------------------
+1. LINKS PRINCIPAIS PARA AVALIAÇÃO
+--------------------------------------------------------------------------------
+
+• LINK DO REPOSITÓRIO GITHUB (Histórico real de commits):
+  https://github.com/P3DR0K13/MetaHabit
+
+• LINK DO SISTEMA NO AR (Pronto para uso sem instalação):
+  https://metahabit.vercel.app
+
+• ESPECIFICAÇÃO FINAL (spec.md):
+  https://github.com/P3DR0K13/MetaHabit/blob/main/spec.md
+
+• CHANGELOG & REGISTRO DE REVISÃO HUMANA (CHANGELOG.md):
+  https://github.com/P3DR0K13/MetaHabit/blob/main/CHANGELOG.md
+
+
+--------------------------------------------------------------------------------
+2. RESUMO DO SISTEMA DESENVOLVIDO
+--------------------------------------------------------------------------------
+
+O Meta (MetaHabit) é um sistema de produtividade pessoal que integra hábitos
+diários recorrentes e projetos orientados a objetivos com inteligência artificial
+(Google Gemini) e gamificação completa.
+
+O produto resolve a paralisia decisória através do cockpit diário "O que faço agora?",
+que reúne hábitos do dia e tarefas prioritárias de projetos em uma única tela.
+
+Principais Recursos:
+- Cockpit Diário "O que faço agora?" (/hoje): Check-in rápido de hábitos e tarefas.
+- Hábitos Recorrentes (/habitos): Frequências, pausa, arquivamento e histórico.
+- Projetos & Missões (/projetos): Decomposição com IA, prazos e percentual de entrega.
+- IA Human-in-the-Loop: A IA propõe tarefas e adaptações, mas NENHUM dado é salvo
+  no banco sem a revisão, edição e confirmação explícita do usuário (RF10, RF20).
+- Gamificação: Progressão de níveis (fórmula cúbica), ranks de Bronze a Lendário,
+  concessão atômica de XP e moedas por atividade, e prevenção de recompensas duplicadas.
+- Loja Pessoal (/loja): Recompensas personalizadas resgatadas com moedas com
+  proteção transacional contra saldo negativo.
+- Painel de Progresso (/progresso): Linha do tempo, escada de ranks e auditoria de XP.
+
+
+--------------------------------------------------------------------------------
+3. CONFORMIDADE COM O CHECKLIST DE REQUISITOS TÉCNICOS E SEGURANÇA
+--------------------------------------------------------------------------------
+
+[X] Link publicado acessível sem exigir instalação local de quem avalia.
+[X] Fluxo completo de cadastro e consulta persistido em banco de dados relacional.
+[X] Login funcional com sessões seguras (JWT jose + cookies HTTP-Only).
+[X] Senhas armazenadas com hash irreversível bcrypt (12 salt rounds).
+[X] Nenhuma credencial ou segredo commitado no repositório (.env no .gitignore).
+[X] Consultas parametrizadas via Prisma ORM v7 (protegido contra SQL Injection).
+[X] Autorização verificada no servidor em 100% das ações (where: userId).
+[X] Evidência clara de revisão humana sobre o código e as propostas da IA.
+
+
+--------------------------------------------------------------------------------
+4. GUIA RÁPIDO PARA O PROFESSOR / AVALIADOR
+--------------------------------------------------------------------------------
+
+1. Abra a URL publicada do sistema em uma aba anônima do navegador.
+2. Acesse a tela de cadastro e crie uma conta com nome, e-mail e senha.
+3. No cockpit diário, conclua um hábito de teste e veja as moedas e XP subirem no topo.
+4. Na aba "Projetos", crie um objetivo e experimente a geração de plano com IA,
+   editando as tarefas antes de confirmar.
+5. Na "Loja Pessoal", cadastre uma recompensa e efetue o resgate com as moedas ganhas.
+
+================================================================================
